@@ -45,11 +45,11 @@ public class mainCadastro {
 			
 			
 			if(i == JOptionPane.YES_OPTION) {
-				JOptionPane.showMessageDialog(null,"\"---- CONFIRME SEUS DADOS -----\" + \" \\nNome: \" + pf1.getNome() +\n"
-			    		+ "					\"\\nTelefone: \" + pf1.getTelefone()+\n"
-			    		+ "					\"\\nEmail: \" + pf1.getEmail() +\n"
-			    		+ "					\"\\nRegião: \" + pf1.getRegiao()+\n"
-			    		+ "					\"\\nRenda: \" + pf1.getRenda(),");
+				JOptionPane.showMessageDialog(null,"---- CONFIRME SEUS DADOS -----" + " \nNome: " + pf1.getNome() +
+						"\nTelefone: " + pf1.getTelefone()+
+						"\nEmail: " + pf1.getEmail() +
+						"\nRegião: " + pf1.getRegiao()+
+						"\nRenda: " + pf1.getRenda());
 			    pf1.ValorIrpf();
 			}
 			else if(i == JOptionPane.NO_OPTION) {

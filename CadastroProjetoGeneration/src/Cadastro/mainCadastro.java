@@ -1,13 +1,11 @@
 package Cadastro;
 
-import java.util.Scanner;
 
 import javax.swing.JOptionPane;
 
 public class mainCadastro {
 	public static void main(String[] args) {
 
-		Scanner ler = new Scanner(System.in);
 		CadastroPF pf1 = new CadastroPF();
 		CadastroPJ pj1 = new CadastroPJ();
 
@@ -39,14 +37,32 @@ public class mainCadastro {
 
 			pf1.setRenda(varRen);
 
+			int i = JOptionPane.showConfirmDialog(
+			        null, 
+			        "Deseja continuar?"
+			        );
 			
-			JOptionPane.showConfirmDialog(null,"---- CONFIRME SEUS DADOS -----" + " \nNome: " + pf1.getNome() +
-					"\nTelefone: " + pf1.getTelefone()+
-					"\nEmail: " + pf1.getEmail() +
-					"\nRegião: " + pf1.getRegiao()+
-					"\nRenda: " + pf1.getRenda());
 			
-			pf1.ValorIrpf();
+			
+			if(i == JOptionPane.YES_OPTION) {
+			    System.out.println("\"---- CONFIRME SEUS DADOS -----\" + \" \\nNome: \" + pf1.getNome() +\n"
+			    		+ "					\"\\nTelefone: \" + pf1.getTelefone()+\n"
+			    		+ "					\"\\nEmail: \" + pf1.getEmail() +\n"
+			    		+ "					\"\\nRegião: \" + pf1.getRegiao()+\n"
+			    		+ "					\"\\nRenda: \" + pf1.getRenda(),");
+			    pf1.ValorIrpf();
+			}
+			else if(i == JOptionPane.NO_OPTION) {
+				JOptionPane.showMessageDialog(null, "Por favor reinicie o cadastro");
+				
+			}
+			else if(i == JOptionPane.CANCEL_OPTION) {
+				JOptionPane.showMessageDialog(null, "Programa cancelado pelo usuário!");
+			}
+			
+			
+			
+			
 		}
 
 		if (test1 == 2) {
@@ -67,13 +83,34 @@ public class mainCadastro {
 			pj1.setRenda(varRen);
 			
 			
-			JOptionPane.showConfirmDialog(null,"---- CONFIRME SEUS DADOS -----" + " \nNome: " + pj1.getNome() +
-					"\nTelefone: " + pj1.getTelefone()+
-					"\nEmail: " + pj1.getEmail() +
-					"\nRegião: " + pj1.getRegiao()+
-					"\nRenda: " + pj1.getRenda());
-			pj1.ValorIrpfPJ();
+			int n = JOptionPane.showConfirmDialog(
+			        null, 
+			        "Deseja continuar?"
+			        );
+			
+			
+			if(n == JOptionPane.YES_OPTION) {
+			    System.out.println("---- CONFIRME SEUS DADOS -----" + " \nNome: " + pj1.getNome() +
+						"\nTelefone: " + pj1.getTelefone()+
+						"\nEmail: " + pj1.getEmail() +
+						"\nRegião: " + pj1.getRegiao()+
+						"\nRenda: " + pj1.getRenda());
+			    pj1.ValorIrpfPJ();
+			}
+			else if(n == JOptionPane.NO_OPTION) {
+				JOptionPane.showMessageDialog(null, "Por favor reinicie o cadastro");
+				
+			}
+			else if(n == JOptionPane.CANCEL_OPTION) {
+				JOptionPane.showMessageDialog(null, "Programa cancelado pelo usuário");
+			}
+			
+			
+			
+			
 		}
+			
+			
 		
 		
 		

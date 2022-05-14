@@ -7,7 +7,7 @@ public class CadastroPJ extends cadastroMae {
 	public void ValorIrpfPJ() {
 
 		if (this.getRenda() < 6677.55) {
-			System.out.println("Você é isento de IRPF");
+			JOptionPane.showMessageDialog(null,"Você é isento de IRPF");
 		}
 		if (this.getRenda() >= 6677.56 && this.getRenda() <= 9922.28) {
 			JOptionPane.showMessageDialog(null, "A sua aliquota é de 7,5%" + "\nVocê pode deduzir até R$ 500,82");

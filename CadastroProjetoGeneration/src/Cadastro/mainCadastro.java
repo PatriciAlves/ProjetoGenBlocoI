@@ -39,31 +39,44 @@ public class mainCadastro {
 
 			pf1.setRenda(varRen);
 
+			
+			JOptionPane.showConfirmDialog(null,"---- CONFIRME SEUS DADOS -----" + " \nNome: " + pf1.getNome() +
+					"\nTelefone: " + pf1.getTelefone()+
+					"\nEmail: " + pf1.getEmail() +
+					"\nRegião: " + pf1.getRegiao()+
+					"\nRenda: " + pf1.getRenda());
+			
 			pf1.ValorIrpf();
 		}
 
 		if (test1 == 2) {
 			System.out.println("Pessoa Juridica");
-			JOptionPane.showInputDialog("Digite seu nome fantasia: ");
-			String varNome = ler.next();
+			String varNome = JOptionPane.showInputDialog("Digite seu nome fantasia: ");
 			pj1.setNome(varNome);
 
-			JOptionPane.showInputDialog("Digite um telefone: ");
-			int varTel = ler.nextInt();
+			int varTel = Integer.parseInt(JOptionPane.showInputDialog("Digite um telefone: "));
 			pj1.setTelefone(varTel);
 
-			JOptionPane.showInputDialog("Digite um e-mail: ");
-			String varMail = ler.next();
+			String varMail = JOptionPane.showInputDialog("Digite um e-mail: ");
 			pj1.setEmail(varMail);
 
-			JOptionPane.showInputDialog("Digite sua região: ");
-			String varReg = ler.next();
+			String varReg = JOptionPane.showInputDialog("Digite sua região: ");
 			pj1.setRegiao(varReg);
 
-			JOptionPane.showInputDialog("Digite sua renda: ");
-			double varRen = ler.nextDouble();
+			double varRen = Double.parseDouble(JOptionPane.showInputDialog("Digite sua renda: "));
 			pj1.setRenda(varRen);
+			
+			
+			JOptionPane.showConfirmDialog(null,"---- CONFIRME SEUS DADOS -----" + " \nNome: " + pj1.getNome() +
+					"\nTelefone: " + pj1.getTelefone()+
+					"\nEmail: " + pj1.getEmail() +
+					"\nRegião: " + pj1.getRegiao()+
+					"\nRenda: " + pj1.getRenda());
+			pj1.ValorIrpfPJ();
 		}
+		
+		
+		
 
 		System.out.println("FIM");
 	}

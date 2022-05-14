@@ -45,7 +45,7 @@ public class mainCadastro {
 			
 			
 			if(i == JOptionPane.YES_OPTION) {
-			    System.out.println("\"---- CONFIRME SEUS DADOS -----\" + \" \\nNome: \" + pf1.getNome() +\n"
+				JOptionPane.showMessageDialog(null,"\"---- CONFIRME SEUS DADOS -----\" + \" \\nNome: \" + pf1.getNome() +\n"
 			    		+ "					\"\\nTelefone: \" + pf1.getTelefone()+\n"
 			    		+ "					\"\\nEmail: \" + pf1.getEmail() +\n"
 			    		+ "					\"\\nRegião: \" + pf1.getRegiao()+\n"
@@ -90,7 +90,7 @@ public class mainCadastro {
 			
 			
 			if(n == JOptionPane.YES_OPTION) {
-			    System.out.println("---- CONFIRME SEUS DADOS -----" + " \nNome: " + pj1.getNome() +
+				JOptionPane.showMessageDialog(null,"---- CONFIRME SEUS DADOS -----" + " \nNome: " + pj1.getNome() +
 						"\nTelefone: " + pj1.getTelefone()+
 						"\nEmail: " + pj1.getEmail() +
 						"\nRegião: " + pj1.getRegiao()+

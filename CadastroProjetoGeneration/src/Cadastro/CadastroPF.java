@@ -14,15 +14,15 @@ public class CadastroPF extends cadastroMae {
 			
 		}
 		if (this.getRenda() >= 2826.66 && this.getRenda() <= 3751.05) {
-			JOptionPane.showMessageDialog(null,"A sua aliquota é de 15%" + "/nVocê pode deduzir até R$ 354,80");
+			JOptionPane.showMessageDialog(null,"A sua aliquota é de 15%" + "\nVocê pode deduzir até R$ 354,80");
 			
 		}
 		if (this.getRenda() >= 3751.06 && this.getRenda() <= 4664.68) {
-			JOptionPane.showMessageDialog(null,"A sua aliquota é de 22,5%" + "/nVocê pode deduzir até R$ 636,13");
+			JOptionPane.showMessageDialog(null,"A sua aliquota é de 22,5%" + "\nVocê pode deduzir até R$ 636,13");
 			
 		}
 		if (this.getRenda() > 4664.69) {
-			JOptionPane.showMessageDialog(null,"A sua aliquota é de 27,5%" + "/nVocê pode deduzir até R$ 869,36");
+			JOptionPane.showMessageDialog(null,"A sua aliquota é de 27,5%" + "\nVocê pode deduzir até R$ 869,36");
 
 		}
 
